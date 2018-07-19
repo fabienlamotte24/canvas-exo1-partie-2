@@ -2,14 +2,14 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/style.Css">
+    <link rel="stylesheet" href="assets/css/style.Css" />
     <title>Exercice 1 Partie 2</title>
   </head>
   <body>
     <canvas id="canvas" width="400" height="400"></canvas>
     <script>
-      var c = document.getElementById('canvas');
-      var ctx = c.getContext('2d');
+    var c = document.getElementById('canvas');
+    var ctx = c.getContext('2d');
     /*Cône de la glace*/
     ctx.beginPath();
     ctx.moveTo(100,200);
@@ -20,11 +20,11 @@
     ctx.fill();
     /*boule de la glace*/
     ctx.beginPath();
-    ctx.lineWidth="3";
+    ctx.moveTo(100,200);
+    ctx.quadraticCurveTo(200,-50,300,200);
+    ctx.lineWidth='3';
     ctx.strokeStyle = 'black';
     ctx.fillStyle = 'maroon';
-    ctx.moveTo(100,200);
-    ctx.bezierCurveTo(200,100,200,100,300,200);
     ctx.stroke();
     ctx.fill();
     </script>
